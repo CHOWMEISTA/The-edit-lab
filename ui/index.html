@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="styles.css"/>
+<title>Timeline Editor</title>
+</head>
+<body>
+  <div id="top">
+    <input id="file" type="file"/>
+    <button id="loadBtn">Load</button>
+    <input id="pluginFile" type="file" />
+    <button id="loadPluginBtn">Load Plugin</button>
+    <button id="playBtn">Play</button>
+    <button id="pauseBtn">Pause</button>
+    <span id="pos">0 ms</span>
+    <button id="exportBtn">Export 0-5000ms</button>
+  </div>
+
+  <div id="previewWrap">
+    <img id="preview" src="" alt="preview"/>
+  </div>
+
+  <div id="plugins"></div>
+
+  <script src="qwebchannel.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
